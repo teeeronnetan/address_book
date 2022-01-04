@@ -99,23 +99,23 @@ class AddressController extends Controller {
 
     //delete address listener
 
-     addressPresenter.deleteAddressOnNext = (response) {
-      addressPresenter.getAllAddress();
-    };
-    addressPresenter.deleteAddressOnComplete = () {};
-    addressPresenter.deleteAddressOnError = (response) {};
-    addressPresenter.deleteAddressOnError = (error) {
-      print(error);
-      showToast(error);
-    };
+    //  addressPresenter.deleteAddressOnNext = (response) {
+    //   addressPresenter.getAllAddress();
+    // };
+    // addressPresenter.deleteAddressOnComplete = () {};
+    // addressPresenter.deleteAddressOnError = (response) {};
+    // addressPresenter.deleteAddressOnError = (error) {
+    //   print(error);
+    //   showToast(error);
+    // };
 
     //edit address listener
 
-    addressPresenter.editAddressOnNext = (response) {
-      addressPresenter.getAllAddress();
-    };
-    addressPresenter.editAddressOnComplete = () {};
-    addressPresenter.editAddressOnError = (response) {};
+  //   addressPresenter.editAddressOnNext = (response) {
+  //     addressPresenter.getAllAddress();
+  //   };
+  //   addressPresenter.editAddressOnComplete = () {};
+  //   addressPresenter.editAddressOnError = (response) {};
   }
   
       void getAddress() {
@@ -133,19 +133,19 @@ class AddressController extends Controller {
 
     }
 
-    void deleteAddress(Address address){
-      addressPresenter.deleteAddress(address);
-    }
+    // void deleteAddress(Address address){
+    //   addressPresenter.deleteAddress(address);
+    // }
 
-    void editAddress(){
-      _selectedAddress.fname  = _editAddressfnameInputController.text;
-      _selectedAddress.lname  = _editAddresslnameInputController.text;
-      _selectedAddress.phonenum  = _editAddressphonenumInputController.text;
-      _selectedAddress.address  = _editAddressaddressInputController.text;
-      _selectedAddress.birthdate  = _editAddressbirthdateInputController.text;
-      addressPresenter.editAddress(_selectedAddress);
-      print(_selectedAddress);
-    }
+    // void editAddress(){
+    //   _selectedAddress.fname  = _editAddressfnameInputController.text;
+    //   _selectedAddress.lname  = _editAddresslnameInputController.text;
+    //   _selectedAddress.phonenum  = _editAddressphonenumInputController.text;
+    //   _selectedAddress.address  = _editAddressaddressInputController.text;
+    //   _selectedAddress.birthdate  = _editAddressbirthdateInputController.text;
+    //   addressPresenter.editAddress(_selectedAddress);
+    //   print(_selectedAddress);
+    // }
 
   @override
   void onDisposed() {
