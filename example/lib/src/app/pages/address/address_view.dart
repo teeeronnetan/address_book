@@ -196,58 +196,9 @@ Future createAlertDialog(
                           }
                         return null;
                         },
-                      ),
-            //           Padding(
-            //             padding: const EdgeInsets.symmetric(vertical: 16.0),
-            //               child: ElevatedButton(
-            //                 onPressed: () {
-            //                   // Validate returns true if the form is valid, or false otherwise.
-            //                   if (_formKey.currentState.validate()) {
-            //                     // If the form is valid, display a snackbar. In the real world,
-            //                     // you'd often call a server or save the information in a database.
-            //                       ScaffoldMessenger.of(context).showSnackBar(
-            //                       const SnackBar(content: Text('Processing Data')),
-            //                     );
-            //                   }
-            //                 },
-            //   child: const Text('Submit'),
-            // ),
-            //         ),  
+                      ), 
                     ],)
                 )
-                // TextField(
-                //       controller: controller.addAddressInputController,
-                //       decoration: InputDecoration(
-                //         labelText: 'Firstname',
-                //         labelStyle: TextStyle(fontSize: 19),
-                //       )
-                // ),
-                // TextField(
-                //   controller: controller.addAddressInputController,
-                //       decoration: InputDecoration(
-                //         labelText: 'Lastname',
-                //         labelStyle: TextStyle(fontSize: 19),
-                //       )
-                // ),
-                // TextField(controller: controller.addAddressInputController,
-                //       decoration: InputDecoration(
-                //         labelText: 'Phone Number',
-                //         labelStyle: TextStyle(fontSize: 19),
-                //       )),
-                // TextField(
-                //   controller: controller.addAddressInputController,
-                //       decoration: InputDecoration(
-                //         labelText: 'Address',
-                //         labelStyle: TextStyle(fontSize: 19),
-                //       )
-                // ),
-                // TextField(
-                //   controller: controller.addAddressInputController,
-                //       decoration: InputDecoration(
-                //         labelText: 'Birthdate',
-                //         labelStyle: TextStyle(fontSize: 19),
-                //       )
-                // )
               ],
             ),
             actions: <Widget>[
@@ -274,79 +225,4 @@ Future createAlertDialog(
             ]
           );
       });
-
-      
-     
-      // return showDialog(
-      //   context: context, 
-      //   builder: (context) {
-      //     return AlertDialog(
-      //       content: Container(
-      //         height: MediaQuery.of(context).size.height,
-      //         width: MediaQuery.of(context).size.width,
-      //         margin: EdgeInsets.all(0),
-      //         child: ListView(
-      //           padding: EdgeInsets.all(0),
-      //           primary: true,
-      //           scrollDirection: Axis.vertical,
-      //           shrinkWrap: true,
-      //           children: [
-      //             DataTable(
-      //               columns: [
-      //                 DataColumn(label: Text("Firstname",
-      //                 softWrap: true,)
-      //                 ),
-      //                 DataColumn(label: Text("Lastname")
-      //                 ),
-      //                 DataColumn(label: Text("Phone Number")
-      //                 ),
-      //                 DataColumn(label: Text("Address")
-      //                 ),
-      //                 DataColumn(label: Text("Birthdate")
-      //                 ),
-      //               ],
-      //               rows: addressList.map(
-      //                 (element) => DataRow(
-      //                   cells: <DataCell>[
-      //                     DataCell(
-      //                       TextField(
-      //                         controller: addAddressInputController,
-      //                         maxLength:4,
-      //                         decoration: InputDecoration(
-      //                           labelText: 'First name',
-      //                           labelStyle: TextStyle(fontSize: 9),
-      //                           counterText: "",
-      //                         ),),
-      //                     ),
-      //                     DataCell(Text(
-      //                       element.lname,
-      //                     )
-      //                     ),
-      //                     DataCell(Text(
-      //                       element.phonenum,
-      //                     )
-      //                     ),
-      //                     DataCell(Text(
-      //                       element.address,
-      //                     )
-      //                     ),
-      //                     DataCell(Text(
-      //                       element.birthdate,
-      //                     )
-      //                     ),
-      //                   ]
-      //                 )
-      //               )
-      //               )
-      //           ],
-      //           actions: <Widget>[
-      //             MaterialButton(onPressed: ),
-      //           ]),
-                
-      //       ),
-
-      //     );
-          
-
-        // });
     }
